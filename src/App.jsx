@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import Contact from './components/Contact';
+import Footer from './components/Footer';
 import Intro from './components/Intro';
 import Portfolio from './components/portfolio/Portfolio';
 import Timeline from './components/timeline/Timeline';
@@ -75,6 +76,7 @@ function App() {
 				<Portfolio />
 				<Timeline />
 				<Contact />
+				<Footer />
 			</div>
 		</>
 	);
