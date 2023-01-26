@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react';
 import Contact from './components/Contact';
 import Intro from './components/Intro';
-import Portfolio from './components/Portfolio';
-import Timeline from './components/Timeline';
+import Portfolio from './components/portfolio/Portfolio';
+import Timeline from './components/timeline/Timeline';
 
 function App() {
 	const [theme, setTheme] = useState(null);
