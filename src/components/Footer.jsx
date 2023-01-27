@@ -21,7 +21,7 @@ function Footer() {
 						</a>
 						<a
 							className="inline-flex items-center space-x-2 rounded-full bg-stone-400 p-2 font-semibold text-white"
-							href="https://linkedin.com/in/robinneyrinck"
+							href="https://www.linkedin.com/in/robin-neyrinck-192bab263/"
 						>
 							<svg
 								className="h-5 w-5 fill-current"
