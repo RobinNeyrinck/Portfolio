@@ -86,6 +86,4 @@ function App() {
 	);
 }
 
-// TODO: Add styling everywhere
-
 export default App;
