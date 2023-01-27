@@ -60,7 +60,7 @@ function Footer() {
 					</div>
 				</div>
 			</div>
-			<p>
+			<p className="mt-2 text-sm  opacity-50">
 				&copy; {new Date().getFullYear()} Robin Neyrinck. All rights reserved.
 			</p>
 		</div>
