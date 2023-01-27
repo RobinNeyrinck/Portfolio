@@ -4,8 +4,8 @@ import PortfolioItem from './PortfolioItem';
 
 function Portfolio() {
 	return (
-		<div className="flex flex-col md:flex-row items-center justify-center">
-			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+		<div className="flex flex-col items-center justify-center md:flex-row">
+			<div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:grid-cols-3">
 				{portfolio.map((project) => (
 					<PortfolioItem
 						imgUrl={project.imgUrl}
