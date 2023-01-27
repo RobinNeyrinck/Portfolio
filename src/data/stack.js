@@ -1,7 +1,7 @@
 export default [
 	{
 		title: 'JavaScript',
-		image: '#',
+		image: '/assets/images/javascript.png',
 		skill: 'Absolute shite',
 	},
 ];
