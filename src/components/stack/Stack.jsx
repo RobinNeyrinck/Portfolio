@@ -14,6 +14,8 @@ function Stack() {
 			</div>
 		</div>
 	);
+
+	// TODO: style this stuff
 }
 
 export default Stack;
