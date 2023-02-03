@@ -5,7 +5,6 @@ function StackItem({ title, image, skill }) {
 		<div>
 			<p>{title}</p>
 			<img src={image} className="h-20 cursor-pointer object-cover" />
-			<p>{skill}</p>
 		</div>
 	);
 }

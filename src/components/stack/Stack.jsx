@@ -6,11 +6,30 @@ import StackItem from './StackItem';
 function Stack() {
 	return (
 		<div className="my-20 flex flex-col justify-center md:flex-row">
-			<div className="w-full md:w-7/12">
+			<div className="flex flex-row md:w-7/12">
 				<Title>Stack</Title>
-				{stack.map((item) => (
-					<StackItem title={item.title} image={item.image} skill={item.skill} />
-				))}
+				<h3 className="text-xl font-semibold">Frontend</h3>
+				{stack
+					.filter((item) => item.technology === 'frontend')
+					.map((item) => (
+						<StackItem
+							title={item.title}
+							image={item.image}
+							skill={item.skill}
+						/>
+					))}
+			</div>
+			<div className="flex flex-row md:w-7/12">
+				<h3 className="text-xl font-semibold">Backend</h3>
+				{stack
+					.filter((item) => item.technology === 'backend')
+					.map((item) => (
+						<StackItem
+							title={item.title}
+							image={item.image}
+							skill={item.skill}
+						/>
+					))}
 			</div>
 		</div>
 	);
