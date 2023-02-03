@@ -8,7 +8,7 @@ function Contact() {
 				<form
 					action="#"
 					method="POST"
-					className="flex w-full flex-col md:w-7/12"
+					className="flex w-full flex-col dark:border-black md:w-7/12"
 				>
 					<Title>Contact</Title>
 					<input
@@ -31,7 +31,7 @@ function Contact() {
 					></textarea>
 					<button
 						type="button"
-						className="inline-block w-max rounded-md bg-gradient-to-r from-yellow-500 to-pink-500 px-8 py-3 text-center text-base font-medium text-white drop-shadow-md hover:stroke-white"
+						className="inline-block w-max rounded-md border-2 px-8 py-3 text-center text-base font-medium dark:drop-shadow-md dark:hover:stroke-white"
 					>
 						Work with me!
 					</button>
