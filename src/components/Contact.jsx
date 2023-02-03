@@ -31,7 +31,7 @@ function Contact() {
 					></textarea>
 					<button
 						type="button"
-						className="inline-block w-max rounded-md border-2 px-8 py-3 text-center text-base font-medium dark:drop-shadow-md dark:hover:stroke-white"
+						className="inline-block w-max rounded-md border-2 px-8 py-3 text-center text-base font-medium text-grey dark:drop-shadow-md dark:hover:stroke-white"
 					>
 						Work with me!
 					</button>

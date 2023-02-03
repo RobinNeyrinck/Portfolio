@@ -5,6 +5,9 @@ module.exports = {
 	theme: {
 		extend: {
 			fontFamily: ['inter', 'serif'],
+			colors: {
+				grey: '#aab0ba',
+			},
 		},
 	},
 	plugins: [],
