@@ -20,7 +20,11 @@ function Stack() {
             {stack
               .filter((item) => item.technology === "frontend")
               .map((item) => (
-                <StackItem title={item.title} icon={item.icon} />
+                <StackItem
+                  key={item.title}
+                  title={item.title}
+                  icon={item.icon}
+                />
               ))}
           </div>
         </div>
@@ -30,7 +34,11 @@ function Stack() {
             {stack
               .filter((item) => item.technology === "backend")
               .map((item) => (
-                <StackItem title={item.title} icon={item.icon} />
+                <StackItem
+                  key={item.title}
+                  title={item.title}
+                  icon={item.icon}
+                />
               ))}
           </div>
         </div>
