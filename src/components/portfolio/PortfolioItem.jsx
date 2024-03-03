@@ -8,11 +8,11 @@ function PortfolioItem({ title, imgUrl, stack, link, description }) {
       rel="noopener noreferrer"
       className="group overflow-hidden rounded-md border-2 border-stone-900 dark:border-white"
     >
-      <div class="group relative">
+      <div className="group relative">
         <img
           src={imgUrl}
           alt="portfolio"
-          class="h-36 w-full cursor-pointer object-cover group-hover:opacity-70 md:h-48"
+          className="h-36 w-full cursor-pointer object-cover group-hover:opacity-70 md:h-48"
         />
         <p className="absolute left-0 top-0 flex h-full w-full items-center justify-center bg-black bg-opacity-50 text-center font-bold text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100 p-2">
           {description}
