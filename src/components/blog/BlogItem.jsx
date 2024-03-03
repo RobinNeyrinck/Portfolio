@@ -4,14 +4,14 @@ function BlogItem({ title, tags, thumbnail, link }) {
     <a
       href={link}
       rel="noopener noreferrer"
-      className="group overflow-hidden rounded-md border-2 border-stone-900 dark:border-white"
+      className="group rounded-md border-2 border-stone-900 dark:border-white p-2"
     >
       <div className="group-hover:opacity-75 ">
         <h3 className="mb-2 text-lg font-semibold dark:text-white md:mb-3 md:text-xl ">
           {title}
         </h3>{" "}
-        <img src={thumbnail} alt={title} className="" />
-        <ul className="flex flex-row flex-wrap items-center justify-start gap-2 text-xs dark:text-white md:text-sm ">
+        <img src={thumbnail} alt={title} />
+        <ul className="flex flex-row flex-wrap items-center justify-start gap-2 text-xs dark:text-white md:text-sm pt-2">
           {tags.map((tag) => (
             <li
               key={tag}
