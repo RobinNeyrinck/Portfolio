@@ -1,0 +1,3 @@
+.footer-link {
+  @apply inline-flex items-center space-x-2 rounded-full bg-stone-400 p-2 font-semibold text-white transition delay-150 ease-in-out hover:bg-stone-500;
+}
