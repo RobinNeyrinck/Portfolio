@@ -13,10 +13,10 @@ function Stack() {
   return (
     <div className="mt-10 flex flex-col justify-center md:flex-row">
       <div className="md:w-7/12">
-        <div className="mb-10">
-          <Title>Stack</Title>
+        <Title>Stack</Title>
+        <div className="mb-2">
           <h3 className="text-xl font-semibold">Frontend</h3>
-          <div className="flex flex-row justify-between">
+          <div className="mt-3 flex flex-row justify-between">
             {stack
               .filter((item) => item.technology === "frontend")
               .map((item) => (
@@ -24,21 +24,19 @@ function Stack() {
               ))}
           </div>
         </div>
-        <div className="mb-10">
+        <div className="mb-2">
           <h3 className="text-xl font-semibold">Backend</h3>
-          <div className="flex flex-row justify-between">
+          <div className="mt-3 flex flex-row justify-between">
             {stack
               .filter((item) => item.technology === "backend")
               .map((item) => (
-                <StackItem title={item.title} icon={item.icon}/>
+                <StackItem title={item.title} icon={item.icon} />
               ))}
           </div>
         </div>
       </div>
     </div>
   );
-
-  // TODO: style this stuff
 }
 
 export default Stack;
