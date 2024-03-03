@@ -7,7 +7,7 @@ function Intro() {
 				Robin Neyrinck
 			</h1>
 			<p className="mb-3 text-base font-medium md:text-xl">
-				Software Engineer & Web developer
+				Software Engineer
 			</p>
 			<p className="mb-6 max-w-xl text-sm font-bold">
 				A developer-in-training, who codes for fun.
