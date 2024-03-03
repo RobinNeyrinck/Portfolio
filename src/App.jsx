@@ -5,6 +5,7 @@ import Intro from './components/Intro';
 import Portfolio from './components/portfolio/Portfolio';
 import Stack from './components/stack/Stack';
 import Timeline from './components/timeline/Timeline';
+import Blog from './components/blog/Blog';
 
 function App() {
 	const [theme, setTheme] = useState(null);
@@ -68,7 +69,7 @@ function App() {
 			<button
 				type="button"
 				onClick={handleThemeSwitch}
-				className="fixed right-20 top-4 z-10 rounded-md bg-violet-300 p-2 p-1 text-lg dark:bg-orange-300"
+				className="fixed right-20 top-4 z-10 rounded-md bg-violet-300 p-2 text-lg dark:bg-orange-300"
 			>
 				{theme === 'dark' ? sun : moon}
 			</button>
@@ -78,6 +79,7 @@ function App() {
 					<Portfolio />
 					<Timeline />
 					<Stack />
+          <Blog/>
 					<Contact />
 					<Footer />
 				</div>
