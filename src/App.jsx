@@ -1,11 +1,12 @@
 import { useEffect, useState } from "react";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Intro from "./components/Intro";
-import Portfolio from "./components/portfolio/Portfolio";
-import Stack from "./components/stack/Stack";
-import Timeline from "./components/timeline/Timeline";
-import Blog from "./components/blog/Blog";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import HendrikManhaeveUX from "./pages/blog/HendrikManhaeveUX";
+import SimonVerdonckCombell from "./pages/blog/SimonVerdonckCombell";
+import CampusCloudCafe from "./pages/blog/CampusCloudCafe";
+import N5TechChallenge from "./pages/blog/N5TechChallenge";
+import TechMeetMix from "./pages/blog/TechMeetMix";
+import ThomasDeBruyneTesting from "./pages/blog/ThomasDeBruyneTesting";
+import Home from "./pages/Home";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -65,7 +66,7 @@ function App() {
   );
 
   return (
-    <>
+    <Router>
       <button
         type="button"
         onClick={handleThemeSwitch}
@@ -74,17 +75,23 @@ function App() {
         {theme === "dark" ? sun : moon}
       </button>
       <div className="font-inter min-h-screen bg-white text-stone-900 dark:bg-stone-700 dark:text-stone-300">
-        <div className="mx-auto max-w-10xl">
-          <Intro />
-          <Portfolio />
-          <Timeline />
-          <Stack />
-          <Blog />
-          <Contact />
-          <Footer />
-        </div>
+        <Routes>
+          <Route path="/hendrik-manhaeve-ux" Component={HendrikManhaeveUX} />
+          <Route
+            path="/simon-verdonck-combell"
+            Component={SimonVerdonckCombell}
+          />
+          <Route path="/n5-tech-challenge" Component={N5TechChallenge} />
+          <Route
+            path="/thomas-de-bruyne-testing"
+            Component={ThomasDeBruyneTesting}
+          />
+          <Route path="/campus-cloud-cafe" Component={CampusCloudCafe} />
+          <Route path="/tech-meet" Component={TechMeetMix} />
+          <Route path="/" Component={Home} />
+        </Routes>
       </div>
-    </>
+    </Router>
   );
 }
 
