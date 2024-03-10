@@ -32,6 +32,8 @@ hooks:
 
   sharedsymlink_after: |
     echo "Setting up folder structure for deployment..."
+    mkdir -p www
+    mkdir -p releases
     exit 0
 
   # SYMLINK: Set current symlink to newest release
