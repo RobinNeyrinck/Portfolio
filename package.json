@@ -2,7 +2,7 @@
   "name": "portfolio",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://robinneyrinck.github.io/Portfolio/",
+  "homepage": "https://robinneyrinck.github.io/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
