@@ -14,7 +14,7 @@ function Home() {
       <Timeline />
       <Stack />
       <Blog />
-      <Contact />
+      {/* <Contact /> */}
       <Footer />
     </div>
   );
