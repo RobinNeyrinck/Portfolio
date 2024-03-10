@@ -16,7 +16,7 @@ export default [
       "RedwoodJS",
     ],
     thumbnail: "assets/images/thumbnails/tech-meet.png",
-    link: "/tech-meet&mix",
+    link: "/tech-meet",
   },
   {
     title: "Hendrik Manhaeve - UX",
