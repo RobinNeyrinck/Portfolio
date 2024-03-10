@@ -10,6 +10,9 @@
 hooks:
   # SETUP: Create folder structure for newest release
   setup_before: |
+    echo "Setting up folder structure for deployment..."
+    mkdir -p www
+    mkdir -p releases
     exit 0
 
   setup_after: |
@@ -39,7 +42,7 @@ hooks:
   # SYMLINK: Set current symlink to newest release
   symlink_before: |
     echo "Updating symlink to the latest release..."
-    ln -sfn "$(readlink releases/latest)/" www
+    ln -sfn "$(readlink releases/latest)/dist" www
     exit 0
 
   symlink_after: |
