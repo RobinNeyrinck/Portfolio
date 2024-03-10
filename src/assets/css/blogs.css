@@ -50,11 +50,13 @@
 }
 
 .blog-container .tag-list {
-  list-style-type: none;
+  display: flex;
+  list-style: none;
   padding: 0;
 }
 
-.blog-container .tag-list li {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
+.blog-container .tag-list li:not(:last-child)::after {
+  content: ', ';
+  margin-right: 5px;
 }
+
