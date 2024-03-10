@@ -16,7 +16,7 @@ function Stack() {
         <Title>Stack</Title>
         <div className="mb-2">
           <h3 className="text-xl font-semibold">Frontend</h3>
-          <div className="mt-3 flex flex-row justify-between">
+          <div className="mt-3 flex flex-row flex-wrap justify-evenly">
             {stack
               .filter((item) => item.technology === "frontend")
               .map((item) => (
@@ -30,7 +30,7 @@ function Stack() {
         </div>
         <div className="mb-2">
           <h3 className="text-xl font-semibold">Backend</h3>
-          <div className="mt-3 flex flex-row justify-between">
+          <div className="mt-3 flex flex-row flex-wrap justify-evenly">
             {stack
               .filter((item) => item.technology === "backend")
               .map((item) => (
