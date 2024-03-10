@@ -28,5 +28,4 @@ export default [
     link: "https://github.com/R0B1NR0B41N/MagicTheGathering",
     description: "A Magic the Gathering deck builder, written in Blazor.",
   },
-  // TODO: add school projects?
 ];
