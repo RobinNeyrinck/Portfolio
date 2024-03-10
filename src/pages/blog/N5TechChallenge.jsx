@@ -1,12 +1,16 @@
+import React from "react";
+import "../../assets/css/blogs.css";
+
 function N5TechChallenge() {
   return (
-    <div>
+    <div className="blog-container">
       <h1>November Five Tech Challenge</h1>
       <img
         src="assets/images/blogs/n5/thumbnail.png"
         alt="thumbnail of the n5 tech challenge"
+        className="blog-image"
       />
-      <p>
+      <p className="blog-content">
         Our recent adventure at the November Five Hackathon in Antwerp was
         nothing short of thrilling. Embarking on a long train journey, eight
         enthusiastic students, including ourselves, made a concerted effort to
@@ -16,8 +20,8 @@ function N5TechChallenge() {
         and creative fervor. The challenge not only tested our technical skills
         but also encouraged innovative problem-solving and teamwork.
       </p>
-      <img src="assets/images/blogs/n5/group.png"/>
-      <p>
+      <img src="assets/images/blogs/n5/group.png" className="blog-image" />
+      <p className="blog-content">
         Throughout the event, the atmosphere buzzed with excitement as
         participants huddled together, exchanging ideas and strategies. The
         November Five Hackathon provided an ideal platform to showcase our
@@ -29,8 +33,8 @@ function N5TechChallenge() {
         adventure was not just about the destination but the journey of
         learning, collaboration, and pushing the boundaries of our abilities.
       </p>
-      <img src="assets/images/blogs/n5/result.png"/>
-      <div>
+      <img src="assets/images/blogs/n5/result.png" className="blog-image" />
+      <div className="source">
         <p>
           Source:{" "}
           <a href="https://www.eventbrite.com/e/n5-tech-challenge-2023-tickets-740034542237">
@@ -38,8 +42,8 @@ function N5TechChallenge() {
           </a>
         </p>
       </div>
-      <p>Tags:</p>
-      <ul>
+      <p className="tags">Tags:</p>
+      <ul className="tag-list">
         <li>Antwerpen</li>
         <li>November Five</li>
         <li>Challenge</li>

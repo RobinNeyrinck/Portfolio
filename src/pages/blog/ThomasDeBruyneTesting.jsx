@@ -1,11 +1,16 @@
+import React from "react";
+import "../../assets/css/blogs.css";
+
 function ThomasDeBruyneTesting() {
   return (
-    <div>
+    <div className="blog-container">
       <h1>Thomas De Bruyne – Testing</h1>
-        <img
-            src="assets/images/blogs/testing/thomas.png"
-            alt="Image of the speaker Thomas De Bruyne" />
-      <p>
+      <img
+        src="assets/images/blogs/testing/thomas.png"
+        alt="Image of the speaker Thomas De Bruyne"
+        className="blog-image"
+      />
+      <p className="blog-content">
         In a recent session organized by Alexander, Thomas De Bruyne shared
         valuable insights on automation, focusing on simplicity and
         practicality. Thomas emphasized the significance of automation without
@@ -21,8 +26,8 @@ function ThomasDeBruyneTesting() {
         absence of hands-on examples.
       </p>
 
-      <p>Tags:</p>
-      <ul>
+      <p className="tags">Tags:</p>
+      <ul className="tag-list">
         <li>Attended Event</li>
         <li>Brugge</li>
         <li>Howest</li>

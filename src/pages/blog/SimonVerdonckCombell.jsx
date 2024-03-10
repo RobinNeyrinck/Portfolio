@@ -1,12 +1,16 @@
+import React from "react";
+import "../../assets/css/blogs.css";
+
 function SimonVerdonckCombell() {
   return (
-    <div>
+    <div className="blog-container">
       <h1>Simon Verdonck – Combell</h1>
       <img
         src="assets/images/blogs/combell/thumbnail.png"
         alt="thumbnail of Simon Verdonck – Combell"
+        className="blog-image"
       />
-      <p>
+      <p className="blog-content">
         In a session organized by Alexander, Simon Verdonck shared insights
         about Combell. However, the talk took a marketing-oriented approach
         rather than delving into the intricacies of hosting. The presentation
@@ -17,8 +21,8 @@ function SimonVerdonckCombell() {
         the event provided a marketing-focused perspective on Combell, leaving
         the technical aspects of hosting somewhat unexplored.
       </p>
-      <p>Tags:</p>
-      <ul>
+      <p className="tags">Tags:</p>
+      <ul className="tag-list">
         <li>Attended Event</li>
         <li>Brugge</li>
         <li>Howest</li>

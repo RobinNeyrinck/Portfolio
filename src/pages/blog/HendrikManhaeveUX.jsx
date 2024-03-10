@@ -1,12 +1,16 @@
+import React from "react";
+import "../../assets/css/blogs.css";
+
 function HendrikManhaeveUX() {
   return (
-    <div>
+    <div className="blog-container">
       <h1>Hendrik Manhaeve – UX</h1>
       <img
         src="assets/images/blogs/ux/hendrik.png"
         alt="Image of the speaker Hendrik Manhaeve"
+        className="blog-image"
       />
-      <p>
+      <p className="blog-content">
         Organized by Alexander, a recent event featuring UX expert Hendrik
         Manhaeve delivered a concise exploration of proper UX design. Hendrik
         provided a comprehensive overview of UX principles, emphasizing the
@@ -20,8 +24,8 @@ function HendrikManhaeveUX() {
         apply these insights to create more user-friendly digital experiences.
       </p>
 
-      <p>Tags:</p>
-      <ul>
+      <p className="tags">Tags:</p>
+      <ul className="tag-list">
         <li>Attended Event</li>
         <li>Brugge</li>
         <li>Howest</li>
