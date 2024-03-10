@@ -25,8 +25,10 @@ function App() {
 
   useEffect(() => {
     if (theme === "dark") {
+      document.querySelector('html').style.backgroundColor = 'rgb(68 64 60)';
       document.documentElement.classList.add("dark");
     } else {
+      document.querySelector('html').style.backgroundColor = 'white';
       document.documentElement.classList.remove("dark");
     }
   }, [theme]);
