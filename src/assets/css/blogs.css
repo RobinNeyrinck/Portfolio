@@ -5,6 +5,7 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-sizing: border-box;
+  overflow: auto;
 }
 
 .blog-container h1 {
@@ -51,6 +52,7 @@
 
 .blog-container .tag-list {
   display: flex;
+  flex-wrap: wrap;
   list-style: none;
   padding: 0;
 }
