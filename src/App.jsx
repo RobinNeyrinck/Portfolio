@@ -7,6 +7,9 @@ import N5TechChallenge from "./pages/blog/N5TechChallenge";
 import TechMeetMix from "./pages/blog/TechMeetMix";
 import ThomasDeBruyneTesting from "./pages/blog/ThomasDeBruyneTesting";
 import Home from "./pages/Home";
+import DrupalCampAI from "./pages/blog/DrupalCampAI";
+import DrupalCampLivewire from "./pages/blog/DrupalCampLivewire";
+import DrupalCampMultilingual from "./pages/blog/DrupalCampMultilingual";
 
 function App() {
   const [theme, setTheme] = useState(null);
@@ -90,6 +93,12 @@ function App() {
           />
           <Route path="/campus-cloud-cafe" Component={CampusCloudCafe} />
           <Route path="/tech-meet" Component={TechMeetMix} />
+          <Route path="/the-genesis-of-generative-grace" Component={DrupalCampAI} />
+          <Route path="/bringing-livewire-to-drupal" Component={DrupalCampLivewire} />
+          <Route
+            path="/multilingual-content-with-local-country-validation"
+            Component={DrupalCampMultilingual}
+          />
           <Route path="/" Component={Home} />
         </Routes>
       </div>
