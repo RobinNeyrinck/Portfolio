@@ -3,7 +3,7 @@ import '../../assets/css/blogs.css';
 function DrupalCampLiveWire() {
 	return (
 		<div className="blog-container">
-			<h1>Ben Caudron - The genesis of generative grace</h1>
+			<h1>Cornel Andreev - Bringing Livewire to Drupal</h1>
 			<img
 				src="assets/images/thumbnails/drupal-camp-livewire.png"
 				alt="Image of the speaker"
